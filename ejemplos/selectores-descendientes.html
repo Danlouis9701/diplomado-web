@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores Descendientes</title>
+    <style>
+        p .link {
+            color: #f00;
+        }
+        p.link {
+            color: #f00;
+        }
+        p, .link {
+            color: #f00;
+        }
+        p + .link {
+            color: #f00;
+        }
+
+        div > a {
+            color: #f0f;
+        }
+        .page-nav > ul {
+            color: #ff0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="page-nav">
+        <ul>
+            <li>Item 1
+                <ul>
+                    <li>SubItem 1</li>
+                </ul>
+            </li>
+            <li>Item 2</li>
+            <li>Item 4</li>
+        </ul>
+    </nav>
+
+
+    <div class="bloque1">
+        <p>
+            <a href="#">Mi link</a>
+        </p>
+    </div>
+
+    <div class="bloque2">
+        <a href="#">Mi link</a>
+    </div>
+</body>
+</html>
